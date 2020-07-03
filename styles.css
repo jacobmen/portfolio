@@ -67,9 +67,27 @@ ul.social-network li {
     transition: all 0.8s;
 }
 
-.class-list{
+.class-list {
     max-height: 200px;
     margin-bottom: 10px;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+}
+
+.intro {
+    margin-bottom: 0px !important;
+}
+
+#particles-js {
+    background-color: #505e69;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -10;
+}
+
+#overlay {
+    position: relative;
 }
