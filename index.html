@@ -186,7 +186,85 @@
         <h1 class="card-header">Technical Skills</h1>
         <div class="card-body">
             <p class="card-text">Languages: Java, C++, Python, SQL, Ladder Logic, HTML, CSS</p>
-            <p class="card-text">Technologies: Flask, Pandas, PyTorch, AWS (RDS, EC2)</p>
+            <p class="card-text">Technologies: Flask, Pandas, Jupyter Notebooks, PyTorch, AWS (RDS, EC2)</p>
+        </div>
+    </div>
+
+    <div class="card border">
+        <h1 class="card-header">Projects</h1>
+        <div class="card-body">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="cubeHeading">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#cubeWeb"
+                                aria-expanded="false" aria-controls="cubeWeb">
+                                CUBE Consulting Client Website
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="cubeWeb" class="collapse" aria-labelledby="cubeHeading" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">Rewrote client’s internal website for managing customer
+                                    data to be more user friendly with a modern interface using HTML and CSS resulting
+                                    in less user mistakes</li>
+                                <li class="list-group-item">Ensured website was useable on all devices and screen sizes
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="styleTransferHeading">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#styleTransfer"
+                                aria-expanded="false" aria-controls="styleTransfer">
+                                Renaissance Image Style Transfer
+                            </button>
+                            <a type="button" class="btn btn-info" href="https://github.com/mqian20/style_transfer"
+                                target="_blank">Repository</a>
+                        </h5>
+                    </div>
+                    <div id="styleTransfer" class="collapse" aria-labelledby="styleTransferHeading"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">Wrote network architecture for a generative adversarial
+                                    network, including the generator and discriminator, using PyTorch</li>
+                                <li class="list-group-item">Analyzed and filtered WikiArt dataset to only allow for
+                                    renaissance style images to be included in training using Python, Jupyter Notebooks,
+                                    and Pandas
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="teamUpHeading">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#teamUp"
+                                aria-expanded="false" aria-controls="teamUp">
+                                TeamUp
+                            </button>
+                            <a type="button" class="btn btn-info" href="https://github.com/jacobmen/TeamUp"
+                                target="_blank">Repository</a>
+                        </h5>
+                    </div>
+                    <div id="teamUp" class="collapse" aria-labelledby="teamUpHeading" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">Created backend framework for web app using Python and
+                                    Flask, allowing for a dynamic interface that updated for users instantly</li>
+                                <li class="list-group-item">Designed and hosted a SQL database on AWS to hold user and
+                                    project information that allowed for immediate communication with web app
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

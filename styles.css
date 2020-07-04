@@ -91,3 +91,7 @@ ul.social-network li {
 #overlay {
     position: relative;
 }
+
+.btn-link {
+    text-transform: none;
+}
