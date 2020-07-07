@@ -94,4 +94,5 @@ ul.social-network li {
 
 .btn-link {
     text-transform: none;
+    text-decoration: none !important;
 }
