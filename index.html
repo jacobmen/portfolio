@@ -183,12 +183,25 @@
                                         storage of floats and doubles in memory, and different properties
                                         of these systems</li>
                                     <li class="list-group-item">Implemented optimization algorithms for
-                                        N-Dimensional equations using Newton's method, the golden Section
+                                        N-Dimensional equations using Newton's method, the golden section
                                         method, and the bisection method</li>
-                                    <li class="list-group-item">Ran Principal Component Analysis on breast
+                                    <li class="list-group-item">Ran Principal Component Analysis on a breast
                                         cancer data set to predict benign and malignant tumors</li>
                                     <li class="list-group-item">Used linear algebra with Markov chains,
                                         linear regressions, and state modeling</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="list-cs361" role="tabpanel"
+                                aria-labelledby="list-cs361-list">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Used Numpy, Pandas, and Matplotlib to visualize and
+                                        find relations in data</li>
+                                    <li class="list-group-item">Created large simulations to predict probabilities
+                                        for different events</li>
+                                    <li class="list-group-item">Implemented ADAM optimizer and tested effectiveness
+                                        with different parameters and data</li>
+                                    <li class="list-group-item">Used different probability distributions to
+                                        make accurate predictions about events</li>
                                 </ul>
                             </div>
                             <div class="tab-pane fade" id="list-math347" role="tabpanel"
@@ -216,6 +229,18 @@
                                     <li class="list-group-item">Studied bilinear forms and their relation to conics</li>
                                 </ul>
                             </div>
+                            <div class="tab-pane fade" id="list-math441" role="tabpanel"
+                                aria-labelledby="list-math441-list">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Learned several methods for solving differential
+                                        equations of different orders</li>
+                                    <li class="list-group-item">Used Picard Iterates to prove Existence-Uniqueness
+                                        Theorem</li>
+                                    <li class="list-group-item">Approximated solutions using infinite series</li>
+                                    <li class="list-group-item">Applied concepts from linear algebra to solve
+                                        systems of differential equations</li>
+                                </ul>
+                            </div>
                             <div class="tab-pane fade" id="list-stat200" role="tabpanel"
                                 aria-labelledby="list-stat200-list">
                                 <ul class="list-group">
@@ -239,6 +264,28 @@
 
     <div class="card border">
         <h1 class="card-header">Work Experience</h1>
+        <div class="card-body">
+            <button class="btn btn-raised btn-secondary" data-toggle="collapse" data-target="#amazon"
+                aria-expanded="true" aria-controls="tesla">
+                <img src="assets/amazon-icon.png" alt="Amazon Icon"> Amazon
+            </button>
+
+            <div id="amazon" class="collapse" aria-labelledby="amazonHeading">
+                <ul class="list-group">
+                    <li class="list-group-item"><b>Software Development Engineering Intern (May-August 2021)</b></li>
+                    <!-- <li class="list-group-item">Programmed a test stand to simulate various programming issues in a mini -->
+                    <!--     assembly line to be used when evaluating future candidates for similar roles using Ladder Logic -->
+                    <!-- </li> -->
+                    <!-- <li class="list-group-item">Implemented an alarm and safety system for an assembly line allowing for -->
+                    <!--     fast responses to malfunctions and automatic stops for errors using Ladder Logic</li> -->
+                    <!-- <li class="list-group-item">Designed a responsive UI for tracking wireless hardware connectivity -->
+                    <!--     issues -->
+                    <!--     resulting in quick feedback and easy debugging using HTML, CSS, Python, and SQL</li> -->
+                    <!-- <li class="list-group-item">Wrote detailed documentation for creating programming interfaces for new -->
+                    <!--     hardware that was used for guidance in several large-scale assembly projects</li> -->
+                </ul>
+            </div>
+        </div>
         <div class="card-body">
             <button class="btn btn-raised btn-secondary" data-toggle="collapse" data-target="#tesla"
                 aria-expanded="true" aria-controls="tesla">
@@ -266,7 +313,7 @@
     <div class="card border">
         <h1 class="card-header">Technical Skills</h1>
         <div class="card-body">
-            <p class="card-text">Languages: Java, C++, Python, SQL, Ladder Logic, HTML, CSS</p>
+            <p class="card-text">Languages: Java, C++, C, Rust, Python, SQL, HTML, CSS, Typescript</p>
             <p class="card-text">Technologies: Flask, Pandas, Jupyter Notebooks, PyTorch, AWS (RDS, EC2)</p>
         </div>
     </div>
@@ -275,6 +322,53 @@
         <h1 class="card-header">Projects</h1>
         <div class="card-body">
             <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="happyfaceHeading">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#happyface"
+                                aria-expanded="false" aria-controls="happyface">
+                                Happy Face
+                            </button>
+                            <a type="button" class="btn btn-info" href="https://github.com/jacobmen/happy_face"
+                                target="_blank">Repository</a>
+                        </h5>
+                    </div>
+
+                    <div id="happyface" class="collapse" aria-labelledby="happyfaceHeading" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">Created terminal based chat app that allowed for clients
+                                    anywhere to communicate and send messages</li>
+                                <li class="list-group-item">Used message-io to create fast and concurrent server
+                                    to support many simultaneous connections and requests
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="stenoHeading">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#steno"
+                                aria-expanded="false" aria-controls="steno">
+                                Steno
+                            </button>
+                            <a type="button" class="btn btn-info" href="https://github.com/jacobmen/steno"
+                                target="_blank">Repository</a>
+                        </h5>
+                    </div>
+
+                    <div id="steno" class="collapse" aria-labelledby="stenoHeading" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">Created command line application to embed and
+                                    extract text in images while minimizing visual change</li>
+                                <li class="list-group-item">Used Rust to ensure speed and memory safety in program
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <div class="card">
                     <div class="card-header" id="cubeHeading">
                         <h5 class="mb-0">
@@ -375,7 +469,7 @@
                         <a type="button" class="btn btn-info" href="https://www.cubeconsulting.org/"
                             target="_blank">Website</a>
                         <ul class="list-group">
-                            <li class="list-group-item"><b>Director of Project Acquisition (May 2020-Present)</b></li>
+                            <li class="list-group-item"><b>Director of Project Acquisition (May 2020-May 2021)</b></li>
                             <li class="list-group-item">Recruited and created project scopes for future clients</li>
                             <li class="list-group-item">Planned and ran a project management workshop</li>
                             <li class="list-group-item"><b>Consultant (August 2019-May 2020)</b></li>
@@ -388,7 +482,7 @@
                 <div class="col-sm-4">
                     <div class="collapse" id="extra-126">
                         <ul class="list-group">
-                            <li class="list-group-item"><b>Course Assistant (May 2020-Present)</b></li>
+                            <li class="list-group-item"><b>Course Assistant (May 2020-May 2021)</b></li>
                             <li class="list-group-item">Ran a weekly code review session to give students feedback on
                                 style, readability, and organization</li>
                             <li class="list-group-item">Designed and wrote documentation for an assignment to be given
@@ -400,7 +494,7 @@
                 <div class="col-sm-4">
                     <div class="collapse" id="extra-james">
                         <ul class="list-group">
-                            <li class="list-group-item"><b>Peer Mentor (May 2020-Present)</b></li>
+                            <li class="list-group-item"><b>Peer Mentor (May 2020-Dec 2020)</b></li>
                             <li class="list-group-item">I just want to say this is one of the most rewarding things I've
                                 done. Especially now, helping them out was really important
                                 for their long term wellbeing
