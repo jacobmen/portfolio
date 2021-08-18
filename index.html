@@ -1,551 +1,358 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta property="og:image" content="assets/preview-image.svg" />
-
-    <!-- Material Design for Bootstrap fonts and icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-
-    <!-- Material Design for Bootstrap CSS -->
-    <link rel="stylesheet"
-        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
-        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no" />
+    <meta name="author" content="Jacob Men" />
+    <meta
+      name="description"
+      content="Portfolio Site"
+    />
 
     <title>Portfolio</title>
-</head>
 
-<body>
-    <div class="intro jumbotron jumbotron-fluid mb-4 py-4 text-light text-center position-relative bg-transparent px-0">
-        <div id="particles-js"></div>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
 
-        <div id="overlay">
-            <div class="container">
-                <h1 class="display-4">Welcome to my Portfolio</h1>
-                <p class="lead">
-                    Hi I'm Jacob Men, currently studying CS at UIUC
-                </p>
+    <link rel="stylesheet" href="./milligram.min.css" />
+    <link rel="stylesheet" href="https://milligram.io/styles/main.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-                <ul class="social-network social-circle">
-                    <li><a href="https://github.com/jacobmen" class="icoGithub" title="Github" target="_blank"><i
-                                class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/jacob-men/" class="icoLinkedin" title="Linkedin"
-                            target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="assets/Resume.pdf" class="icoDownload" title="Resume" target="_blank"><i
-                                class="fa fa-file-text"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+  <body>
+    <main class="wrapper">
+      <nav class="navigation">
+        <section class="container">
+          <a class="navigation-title">
+            <h1 class="title">Jacob Men's Portfolio</h1>
+          </a>
+          <ul class="navigation-list float-right">
+            <li class="navigation-item">
+              <a
+                class="navigation-link"
+                target="_blank"
+                href="https://github.com/jacobmen">
+                Github
+              </a>
+            <li class="navigation-item">
+              <a
+                class="navigation-link"
+                target="_blank"
+                href="https://www.linkedin.com/in/jacob-men/">
+                Linkedin
+              </a>
+            <li class="navigation-item">
+              <a
+                class="navigation-link"
+                target="_blank"
+                href="assets/Resume.pdf">
+                Resume
+              </a>
+            </li>
+            </li>
+          </ul>
+        </section>
+      </nav>
 
-    <div class="card border">
-        <h1 class="card-header">Education</h1>
-        <div class="card-body">
-            <h5 class="card-title"> <b>University of Illinois at Urbana-Champaign (August 2019-May 2022)</b> </h5>
+      <section class="container" id="education">
+        <h2 class="title">Education</h2>
 
-            <p class="card-text">B.S. in Math & Computer Science</p>
-            <p class="card-text">Minor in Applied Statistics</p>
+        <dl>
+          <dt>
+            <h4>University of Illinois at Urbana-Champaign (August 2019-May 2022)</h4>
+          </dt>
+          <dt>
+            B.S. in Math & Computer Science
+          </dt>
+        </dl>
 
-            <a class="btn btn-raised btn-secondary" data-toggle="collapse" href="#coursework" role="button"
-                aria-expanded="false" aria-controls="coursework">
-                Coursework
+        <a class="button" href="./coursework.html">Coursework</a>
+      </section>
+
+      <section class="container" id="work_experience">
+        <h2 class="title">Work Experience</h2>
+
+        <dl>
+          <dt><h4>Amazon</h4></dt>
+          <dt><b>Software Development Engineering Intern (May-August 2021)</b></dt>
+
+          <dd>
+            Designed and implemented a new Alexa service to bring customer order pickup times
+            down to less than two minutes in Whole Foods stores across the country using Java
+          </dd>
+          <dd>
+            Created unit and integration tests to confirm proper operation of AWS Fargate service using
+            Java, JUnit, Guice, and Mockito
+          </dd>
+          <dd>
+            Worked with different teams to define scopes and uses of APIs to ensure encryption and
+            privacy of customer data
+          </dd>
+          <dd>
+            <a
+              class="navigation-link"
+              target="_blank"
+              href="https://www.linkedin.com/posts/amazon-alexa-developers_alexalive-activity-6823646887355252736-LqY-/">
+              Learn more about my project
             </a>
-            <div class="collapse" id="coursework">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="list-group class-list" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action active btn-secondary" id="list-cs126-list"
-                                data-toggle="list" href="#list-cs126" role="tab" aria-controls="cs126">Software Design
-                                Studio (CS 126)</a>
-                            <a class="list-group-item list-group-item-action btn-secondary" id="list-cs173-list"
-                                data-toggle="list" href="#list-cs173" role="tab" aria-controls="cs173">Discrete
-                                Structures (CS 173)</a>
-                            <a class="list-group-item list-group-item-action btn-secondary" id="list-cs225-list"
-                                data-toggle="list" href="#list-cs225" role="tab" aria-controls="cs225">Data Structures
-                                and Algorithms (CS
-                                225)</a>
-                            <a class="list-group-item list-group-item-action btn-secondary" id="list-cs233-list"
-                                data-toggle="list" href="#list-cs233" role="tab" aria-controls="cs233">Computer
-                                Architecture (CS 233)</a>
-                            <a class="list-group-item list-group-item-action btn-secondary" id="list-cs241-list"
-                                data-toggle="list" href="#list-cs241" role="tab" aria-controls="cs241">Systems
-                                Programming (CS 241)</a>
-                            <a class="list-group-item list-group-item-action btn-secondary" id="list-cs357-list"
-                                data-toggle="list" href="#list-cs357" role="tab" aria-controls="cs357">
-                                Numerical Methods (CS 357)</a>
-                            <a class="list-group-item list-group-item-action btn-secondary" id="list-cs361-list"
-                                data-toggle="list" href="#list-cs361" role="tab" aria-controls="cs361">
-                                Probability & Statistics for Computer Science (CS 361)</a>
-                            <a class="list-group-item list-group-item-action btn-secondary" id="list-math347-list"
-                                data-toggle="list" href="#list-math347" role="tab" aria-controls="math347">Fundamental
-                                Mathematics (MATH
-                                347)</a>
-                            <a class="list-group-item list-group-item-action btn-secondary" id="list-math416-list"
-                                data-toggle="list" href="#list-math416" role="tab" aria-controls="math416">Abstract
-                                Linear Algebra (MATH
-                                416)</a>
-                            <a class="list-group-item list-group-item-action btn-secondary" id="list-math441-list"
-                                data-toggle="list" href="#list-math441" role="tab" aria-controls="math441">
-                                Differential Equations (MATH
-                                441)</a>
-                            <a class="list-group-item list-group-item-action btn-secondary" id="list-stat200-list"
-                                data-toggle="list" href="#list-stat200" role="tab" aria-controls="stat200">Statistical
-                                Analysis (STAT
-                                200)</a>
-                        </div>
-                    </div>
-                    <div class="col-8">
-                        <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="list-cs126" role="tabpanel"
-                                aria-labelledby="list-cs126-list">
-                                <ul class="list-group">
-                                    <li class="list-group-item">Learned best practices for writing code including clear
-                                        documentation, easy to understand function/variable names, and the use of
-                                        whitespace to block code together</li>
-                                    <li class="list-group-item">Heavily used elements of Object Oriented Programming
-                                        including interfaces, abstract classes, inheritance, abstraction, and closed
-                                        object fields</li>
-                                    <li class="list-group-item">Used Java to create a text based adventure game using
-                                        JSON for storage, a Crazy 8s card game implementation, and a TicTacToe winner
-                                        checker</li>
-                                    <li class="list-group-item">Used C++ to create a Sudoku solver, a hand written digit
-                                        classifier, and a music visualizer with the Cinder framework for the final
-                                        project</li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane fade" id="list-cs173" role="tabpanel"
-                                aria-labelledby="list-cs173-list">
-                                <ul class="list-group">
-                                    <li class="list-group-item">Learned principles of number theory and logic with
-                                        proofs, modular arithmetic, sets, relations/functions, and induction
-                                    </li>
-                                    <li class="list-group-item">Explored theoretical computer science principles with
-                                        graphs, trees, and recursive definitions</li>
-                                    <li class="list-group-item">Examined algorithms like merge sort and Karatsuba using
-                                        Big-O notation, unrolling,
-                                        recursion trees, and state diagrams</li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane fade" id="list-cs225" role="tabpanel"
-                                aria-labelledby="list-cs225-list">
-                                <ul class="list-group">
-                                    <li class="list-group-item">Learned fundamental data structures including stacks,
-                                        queues, linked lists, BSTs, hash tables, and disjoint sets
-                                    </li>
-                                    <li class="list-group-item">Implemented algorithms to manipulate and create images
-                                        based on traversals like DFS and BFS
-                                    </li>
-                                    <li class="list-group-item">Created a CSV parser to create and manipulate a graph
-                                        of the Texas road network to find the shortest and landmark path for different
-                                        points
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane fade" id="list-cs233" role="tabpanel"
-                                aria-labelledby="list-cs233-list">
-                                <ul class="list-group">
-                                    <li class="list-group-item">Created circuits like adders, multiplexers, flip flops,
-                                        and registers using Verilog
-                                    </li>
-                                    <li class="list-group-item">Implemented a pipelined CPU based on the MIPS ISA with
-                                        instruction parsing, memory manipulation, conditionals, branches, and jumps
-                                    </li>
-                                    <li class="list-group-item">Translated C programs like a dominoe solver into assembly</li>
-                                    <li class="list-group-item">Converted programs into vectorized forms using SIMD instructions
-                                        in C
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane fade" id="list-cs241" role="tabpanel"
-                                aria-labelledby="list-cs241-list">
-                                <ul class="list-group">
-                                    <li class="list-group-item">Built a shell to execute commands, track history,
-                                        load and run script files, and pass I/O between programs</li>
-                                    <li class="list-group-item">Created implementations of malloc, calloc, realloc,
-                                        and free that were faster than glibc and placed top 10 in classwide competition</li>
-                                    <li class="list-group-item">Implemented Make build tool that built dependencies
-                                        in parallel using a thread pool based on pthreads</li>
-                                    <li class="list-group-item">Created a fast FTP client and server using epoll
-                                        to support multiple requests and interruptions</li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane fade" id="list-cs357" role="tabpanel"
-                                aria-labelledby="list-cs357-list">
-                                <ul class="list-group">
-                                    <li class="list-group-item">Learned about floating point computation,
-                                        storage of floats and doubles in memory, and different properties
-                                        of these systems</li>
-                                    <li class="list-group-item">Implemented optimization algorithms for
-                                        N-Dimensional equations using Newton's method, the golden section
-                                        method, and the bisection method</li>
-                                    <li class="list-group-item">Ran Principal Component Analysis on a breast
-                                        cancer data set to predict benign and malignant tumors</li>
-                                    <li class="list-group-item">Used linear algebra with Markov chains,
-                                        linear regressions, and state modeling</li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane fade" id="list-cs361" role="tabpanel"
-                                aria-labelledby="list-cs361-list">
-                                <ul class="list-group">
-                                    <li class="list-group-item">Used Numpy, Pandas, and Matplotlib to visualize and
-                                        find relations in data</li>
-                                    <li class="list-group-item">Created large simulations to predict probabilities
-                                        for different events</li>
-                                    <li class="list-group-item">Implemented ADAM optimizer and tested effectiveness
-                                        with different parameters and data</li>
-                                    <li class="list-group-item">Used different probability distributions to
-                                        make accurate predictions about events</li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane fade" id="list-math347" role="tabpanel"
-                                aria-labelledby="list-math347-list">
-                                <ul class="list-group">
-                                    <li class="list-group-item">Proved relations between numbers using remainders,
-                                        congruence, greatest common divisors, and the Euclidean Algorithm</li>
-                                    <li class="list-group-item">Learned principles of Real Analysis including well
-                                        ordering, the Completeness Axiom, and the infimum and supremum</li>
-                                    <li class="list-group-item">Explored relation between numbers and sets through
-                                        rings, congruence, and well defined functions</li>
-                                    <li class="list-group-item">Expanded set theory to include infinite and uncountable
-                                        sets like Cantor's</li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane fade" id="list-math416" role="tabpanel"
-                                aria-labelledby="list-math416-list">
-                                <ul class="list-group">
-                                    <li class="list-group-item">Proved theorems on abstract vector spaces including
-                                        real numbers, complex numbers, polynomials, and matrices
-                                    </li>
-                                    <li class="list-group-item">Performed complex analysis on inner product spaces
-                                        with Legendre polynomials and Fourier transforms
-                                    </li>
-                                    <li class="list-group-item">Studied bilinear forms and their relation to conics</li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane fade" id="list-math441" role="tabpanel"
-                                aria-labelledby="list-math441-list">
-                                <ul class="list-group">
-                                    <li class="list-group-item">Learned several methods for solving differential
-                                        equations of different orders</li>
-                                    <li class="list-group-item">Used Picard Iterates to prove Existence-Uniqueness
-                                        Theorem</li>
-                                    <li class="list-group-item">Approximated solutions using infinite series</li>
-                                    <li class="list-group-item">Applied concepts from linear algebra to solve
-                                        systems of differential equations</li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane fade" id="list-stat200" role="tabpanel"
-                                aria-labelledby="list-stat200-list">
-                                <ul class="list-group">
-                                    <li class="list-group-item">Learned proper experimental design, confounders,
-                                        and double blind procedures
-                                    </li>
-                                    <li class="list-group-item">Analyzed data sets for relations and trends using R</li>
-                                    <li class="list-group-item">Performed statistical tests including Z, U, H Chi Square, and t
-                                        on different data sets and experiments
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- <div class="tab-pane fade" id="list-settings" role="tabpanel"
-                                aria-labelledby="list-settings-list">...</div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+          </dd>
+        </dl>
 
-    <div class="card border">
-        <h1 class="card-header">Work Experience</h1>
-        <div class="card-body">
-            <button class="btn btn-raised btn-secondary" data-toggle="collapse" data-target="#amazon"
-                aria-expanded="true" aria-controls="tesla">
-                <img src="assets/amazon-icon.png" alt="Amazon Icon"> Amazon
-            </button>
+        <dl>
+          <dt><h4>Tesla</h4></dt>
+          <dt><b>Controls Programming Intern (May-August 2020)</b></dt>
 
-            <div id="amazon" class="collapse" aria-labelledby="amazonHeading">
-                <ul class="list-group">
-                    <li class="list-group-item"><b>Software Development Engineering Intern (May-August 2021)</b></li>
-                    <li class="list-group-item">Designed and implemented a new Alexa service to bring customer order pickup times down to
-                        less than two minutes in Whole Foods stores across the country using Java</li>
-                    <li class="list-group-item">Created unit and integration tests to confirm proper operation of AWS Fargate service using
-                        Java, JUnit, Guice, and Mockito</li>
-                    <li class="list-group-item">Worked with different teams to define scopes and uses of APIs to ensure encryption and
-                        privacy of customer data</li>
-                    <li class="list-group-item"><a href="https://www.linkedin.com/posts/amazon-alexa-developers_alexalive-activity-6823646887355252736-LqY-/"
-                            target="_blank">Learn more about my project </a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="card-body">
-            <button class="btn btn-raised btn-secondary" data-toggle="collapse" data-target="#tesla"
-                aria-expanded="true" aria-controls="tesla">
-                <img src="assets/icons8-tesla-48.png" alt="Tesla Icon">Tesla
-            </button>
+          <dd>
+            Programmed a test stand to simulate various programming issues in a mini
+            assembly line to be used when evaluating future candidates for similar roles using Ladder Logic
+          </dd>
+          <dd>
+            Implemented an alarm and safety system for an assembly line allowing for
+            fast responses to malfunctions and automatic stops for errors using Ladder Logic
+          </dd>
+          <dd>
+            Designed a responsive UI for tracking wireless hardware connectivity
+            issues resulting in quick feedback and easy debugging using HTML, CSS, Python, and SQL
+          </dd>
+          <dd>
+            Wrote detailed documentation for creating programming interfaces for new
+            hardware that was used for guidance in several large-scale assembly projects
+          </dd>
+        </dl>
+      </section>
 
-            <div id="tesla" class="collapse" aria-labelledby="teslaHeading">
-                <ul class="list-group">
-                    <li class="list-group-item"><b>Controls Programming Intern (May-August 2020)</b></li>
-                    <li class="list-group-item">Programmed a test stand to simulate various programming issues in a mini
-                        assembly line to be used when evaluating future candidates for similar roles using Ladder Logic
-                    </li>
-                    <li class="list-group-item">Implemented an alarm and safety system for an assembly line allowing for
-                        fast responses to malfunctions and automatic stops for errors using Ladder Logic</li>
-                    <li class="list-group-item">Designed a responsive UI for tracking wireless hardware connectivity
-                        issues
-                        resulting in quick feedback and easy debugging using HTML, CSS, Python, and SQL</li>
-                    <li class="list-group-item">Wrote detailed documentation for creating programming interfaces for new
-                        hardware that was used for guidance in several large-scale assembly projects</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+      <section class="container" id="technical_skill">
+        <h2 class="title">Technical Skills</h2>
 
-    <div class="card border">
-        <h1 class="card-header">Technical Skills</h1>
-        <div class="card-body">
-            <p class="card-text">Languages: Java, C++, C, Rust, Python, SQL, HTML, CSS, Typescript</p>
-            <p class="card-text">Technologies: Flask, Pandas, Jupyter Notebooks, PyTorch, AWS (RDS, EC2)</p>
-        </div>
-    </div>
+        <p>
+          Languages: Java, C++, C, Rust, Python, SQL, HTML, CSS, Typescript
+        </p>
+        <p>
+          Technologies: Flask, Pandas, Jupyter Notebooks, PyTorch, AWS (RDS, EC2)
+        </p>
+      </section>
 
-    <div class="card border">
-        <h1 class="card-header">Projects</h1>
-        <div class="card-body">
-            <div id="accordion">
-                <div class="card">
-                    <div class="card-header" id="happyfaceHeading">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#happyface"
-                                aria-expanded="false" aria-controls="happyface">
-                                Terminal Chat App
-                            </button>
-                            <a type="button" class="btn btn-info" href="https://github.com/jacobmen/happy_face"
-                                target="_blank">Repository</a>
-                        </h5>
-                    </div>
+      <section class="container" id="projects">
+        <h2 class="title">Projects</h2>
 
-                    <div id="happyface" class="collapse" aria-labelledby="happyfaceHeading" data-parent="#accordion">
-                        <div class="card-body">
-                            <ul class="list-group">
-                                <li class="list-group-item">Created terminal based chat app that allowed for clients
-                                    anywhere to communicate and send messages</li>
-                                <li class="list-group-item">Used message-io to create fast and concurrent server
-                                    to support many simultaneous connections and requests
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="stenoHeading">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#steno"
-                                aria-expanded="false" aria-controls="steno">
-                                Steno
-                            </button>
-                            <a type="button" class="btn btn-info" href="https://github.com/jacobmen/steno"
-                                target="_blank">Repository</a>
-                        </h5>
-                    </div>
+        <dl>
+          <dt>
+            <h4><a
+              class="navigation-link"
+              target="_blank"
+              href="https://github.com/jacobmen/happy_face">
+              Terminal Chat App
+            </a></h4>
+          </dt>
 
-                    <div id="steno" class="collapse" aria-labelledby="stenoHeading" data-parent="#accordion">
-                        <div class="card-body">
-                            <ul class="list-group">
-                                <li class="list-group-item">Created command line application to embed and
-                                    extract text in images while minimizing visual change</li>
-                                <li class="list-group-item">Used Rust to ensure speed and memory safety in program
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="cubeHeading">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#cubeWeb"
-                                aria-expanded="false" aria-controls="cubeWeb">
-                                CUBE Consulting Client Website
-                            </button>
-                        </h5>
-                    </div>
+          <dd>
+            Created terminal based chat app that allowed for clients
+            anywhere to communicate and send messages
+          </dd>
+          <dd>
+            Used message-io to create fast and concurrent server
+            to support many simultaneous connections and requests
+          </dd>
+        </dl>
 
-                    <div id="cubeWeb" class="collapse" aria-labelledby="cubeHeading" data-parent="#accordion">
-                        <div class="card-body">
-                            <ul class="list-group">
-                                <li class="list-group-item">Rewrote client’s internal website for managing customer
-                                    data to be more user friendly with a modern interface using HTML and CSS resulting
-                                    in less user mistakes</li>
-                                <li class="list-group-item">Ensured website was useable on all devices and screen sizes
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="styleTransferHeading">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#styleTransfer"
-                                aria-expanded="false" aria-controls="styleTransfer">
-                                Renaissance Image Style Transfer
-                            </button>
-                            <a type="button" class="btn btn-info" href="https://github.com/mqian20/style_transfer"
-                                target="_blank">Repository</a>
-                        </h5>
-                    </div>
-                    <div id="styleTransfer" class="collapse" aria-labelledby="styleTransferHeading"
-                        data-parent="#accordion">
-                        <div class="card-body">
-                            <ul class="list-group">
-                                <li class="list-group-item">Wrote network architecture for a generative adversarial
-                                    network, including the generator and discriminator, using PyTorch</li>
-                                <li class="list-group-item">Analyzed and filtered WikiArt dataset to only allow for
-                                    renaissance style images to be included in training using Python, Jupyter Notebooks,
-                                    and Pandas
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="teamUpHeading">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#teamUp"
-                                aria-expanded="false" aria-controls="teamUp">
-                                Team Up
-                            </button>
-                            <a type="button" class="btn btn-info" href="https://github.com/jacobmen/TeamUp"
-                                target="_blank">Repository</a>
-                        </h5>
-                    </div>
-                    <div id="teamUp" class="collapse" aria-labelledby="teamUpHeading" data-parent="#accordion">
-                        <div class="card-body">
-                            <ul class="list-group">
-                                <li class="list-group-item">Created backend framework for web app using Python and
-                                    Flask, allowing for a dynamic interface that updated for users instantly</li>
-                                <li class="list-group-item">Designed and hosted a SQL database on AWS to hold user and
-                                    project information that allowed for immediate communication with web app
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        <dl>
+          <dt>
+            <h4><a
+              class="navigation-link"
+              target="_blank"
+              href="https://github.com/jacobmen/steno">
+              Steno
+            </a></h4>
+          </dt>
 
-    <div class="card border">
-        <h1 class="card-header">Extracurriculars</h1>
-        <div class="card-body">
-            <p>
-                <button class="btn btn-raised btn-secondary" type="button" data-toggle="collapse"
-                    data-target="#extra-cube" aria-expanded="false" aria-controls="extra-cube">
-                    CUBE Consulting
-                </button>
+          <dd>
+            Created command line application to embed and
+            extract text in images while minimizing visual change
+          </dd>
+          <dd>
+            Used Rust to ensure speed and memory safety in program
+          </dd>
+        </dl>
 
-                <button class="btn btn-raised btn-secondary" type="button" data-toggle="collapse"
-                    data-target="#extra-126" aria-expanded="false" aria-controls="extra-126">
-                    Software Design Studio (CS 126)
-                </button>
+        <dl>
+          <dt>
+            <h4>
+              CUBE Consulting Client Website
+            </h4>
+          </dt>
 
-                <button class="btn btn-raised btn-secondary" type="button" data-toggle="collapse"
-                    data-target="#extra-james" aria-expanded="false" aria-controls="extra-james">
-                    James Scholar Honors Program
-                </button>
-            </p>
+          <dd>
+            Rewrote client’s internal website for managing customer
+            data to be more user friendly with a modern interface using HTML and CSS resulting
+            in less user mistakes
+          </dd>
+          <dd>
+            Ensured website was useable on all devices and screen sizes
+          </dd>
+        </dl>
 
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="collapse" id="extra-cube">
-                        <a type="button" class="btn btn-info" href="https://www.cubeconsulting.org/"
-                            target="_blank">Website</a>
-                        <ul class="list-group">
-                            <li class="list-group-item"><b>Director of Project Acquisition (May 2020-May 2021)</b></li>
-                            <li class="list-group-item">Recruited and created project scopes for future clients</li>
-                            <li class="list-group-item">Planned and ran a project management workshop</li>
-                            <li class="list-group-item"><b>Consultant (August 2019-May 2020)</b></li>
-                            <li class="list-group-item">Conducted market research to help local startup know its
-                                viability in entering new market</li>
-                        </ul>
-                    </div>
-                </div>
+        <dl>
+          <dt>
+            <h4><a
+              class="navigation-link"
+              target="_blank"
+              href="https://github.com/mqian20/style_transfer">
+              Renaissance Image Style Transfer
+            </a></h4>
+          </dt>
 
-                <div class="col-sm-4">
-                    <div class="collapse" id="extra-126">
-                        <ul class="list-group">
-                            <li class="list-group-item"><b>Course Assistant (May 2020-May 2021)</b></li>
-                            <li class="list-group-item">Ran a weekly code review session to give students feedback on
-                                style, readability, and organization</li>
-                            <li class="list-group-item">Designed and wrote documentation for an assignment to be given
-                                to students</li>
-                        </ul>
-                    </div>
-                </div>
+          <dd>
+            Wrote network architecture for a generative adversarial
+            network, including the generator and discriminator, using PyTorch
+          </dd>
+          <dd>
+            Analyzed and filtered WikiArt dataset to only allow for
+            renaissance style images to be included in training using Python, Jupyter Notebooks,
+            and Pandas
+          </dd>
+        </dl>
 
-                <div class="col-sm-4">
-                    <div class="collapse" id="extra-james">
-                        <ul class="list-group">
-                            <li class="list-group-item"><b>Peer Mentor (May 2020-Dec 2020)</b></li>
-                            <li class="list-group-item">I just want to say this is one of the most rewarding things I've
-                                done. Especially now, helping them out was really important
-                                for their long term wellbeing
-                            </li>
-                            <li class="list-group-item">Helped incoming freshmen adjust to campus life through meetups,
-                                virtual calls, and tours
-                            </li>
-                            <li class="list-group-item">Gave advise on work/life balance, class schedules, and clubs to
-                                join</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        <dl>
+          <dt>
+            <h4><a
+              class="navigation-link"
+              target="_blank"
+              href="https://github.com/jacobmen/TeamUp">
+              Team Up
+            </a></h4>
+          </dt>
 
-    <div class="card border">
-        <h1 class="card-header">Events Attended</h1>
-        <div class="card-body">
-            <ul class="list-group">
-                <li class="list-group-item">Code For Good (September 2020)</li>
-                <li class="list-group-item">Hack This (August 2020)
-                    <a type="button" class="btn btn-info" href="https://github.com/jacobmen/hack_this"
-                        target="_blank">Repository</a></li>
-                <li class="list-group-item">VandyHacks Summer Edition (July 2020)
-                    <a type="button" class="btn btn-info" href="https://github.com/jacobmen/vandy-data-analysis"
-                        target="_blank">Repository</a></li>
-                <li class="list-group-item">Capital One Software Engineering Summit (May 2020)</li>
-                <li class="list-group-item">Hack Illinois (February 2020)
-                    <a type="button" class="btn btn-info" href="https://github.com/jacobmen/FinTechWebApp"
-                        target="_blank">Repository</a></li>
-                </li>
-            </ul>
-        </div>
-    </div>
+          <dd>
+            Created backend framework for web app using Python and
+            Flask, allowing for a dynamic interface that updated for users instantly
+          </dd>
+          <dd>
+            Designed and hosted a SQL database on AWS to hold user and
+            project information that allowed for immediate communication with web app
+          </dd>
+        </dl>
+      </section>
 
-    <!-- <div class="container-fluid">
-    </div> -->
+      <section class="container" id="extracurriculars">
+        <h2 class="title">Extracurriculars</h2>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
-        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous">
-    </script>
-    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
-        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous">
-    </script>
+        <dl>
+          <dt><h4>Systems Programming (CS 241)</h4></dt>
+          <dt><b>Course Assistant (August 2021-Present)</b></dt>
 
-    <!-- Particles -->
-    <script src="js/particles.js"></script>
-    <script src="app.js"></script>
-</body>
+          <dd>
+            Assisted in running lab and office hours sessions by helping students debug code
+            and understand the content of the class
+          </dd>
+          <dd>
+            Developed new assignments for students to gain a better understanding of class material
+          </dd>
+        </dl>
 
+        <dl>
+          <dt><h4>IoT Systems Research Group</h4></dt>
+          <dt><b>Developer (May 2021-Present)</b></dt>
+
+          <dd>
+            Led team effort to containerize key dependencies including a MongoDB instance using Docker
+          </dd>
+          <dd>
+            Contributed to backend API service using Typescript
+          </dd>
+        </dl>
+
+        <dl>
+          <dt><h4>CUBE Consulting</h4></dt>
+          <dt><b>Director of Project Acquisition (May 2020-May 2021)</b></dt>
+          <dd>
+            Recruited and created project scopes for future clients
+          </dd>
+          <dd>
+            Planned and ran a project management workshop
+          </dd>
+
+          <dt>
+            <b>Consultant (August 2019-May 2020)</b>
+          </dt>
+          <dd>
+            Conducted market research to help local startup know its viability in entering new market
+          </dd>
+        </dl>
+
+        <dl>
+          <dt><h4>Software Design Studio (CS 126)</h4></dt>
+          <dt><b>Course Assistant (May 2020-May 2021)</b></dt>
+
+          <dd>
+            Ran a weekly code review session to give students feedback on
+            style, readability, and organization
+          </dd>
+          <dd>
+            Designed and wrote documentation for an assignment to be given
+            to students
+          </dd>
+        </dl>
+
+        <dl>
+          <dt><h4>James Scholar Honors Program</h4></dt>
+          <dt><b>Peer Mentor (May 2020-Dec 2020)</b></dt>
+
+          <dd>
+            Helped incoming freshmen adjust to campus life through meetups, virtual calls, and tours
+          </dd>
+          <dd>
+            Gave advise on work/life balance, class schedules, and clubs to join
+          </dd>
+        </dl>
+      </section>
+
+      <section class="container" id="events_attended">
+        <h2 class="title">Events Attended</h2>
+
+        <dl>
+          <dt>
+            <h4>
+              Code For Good (September 2020)
+            </h4>
+          </dt>
+          <dt>
+            <h4><a
+              class="navigation-link"
+              target="_blank"
+              href="https://github.com/jacobmen/hack_this">
+              Hack This (August 2020)
+            </a></h4>
+          </dt>
+          <dt>
+            <h4><a
+              class="navigation-link"
+              target="_blank"
+              href="https://github.com/jacobmen/vandy-data-analysis">
+              VandyHacks Summer Edition (July 2020)
+            </a></h4>
+          </dt>
+          <dt>
+            <h4>
+              Capital One Software Engineering Summit (May 2020)
+            </h4>
+          </dt>
+          <dt>
+            <h4><a
+              class="navigation-link"
+              target="_blank"
+              href="https://github.com/jacobmen/FinTechWebApp">
+              Hack Illinois (February 2020)
+            </a></h4>
+          </dt>
+        </dl>
+      </section>
+    </main>
+  </body>
 </html>
+
