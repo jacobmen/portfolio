@@ -6,6 +6,12 @@ body {
   color: rgb(164, 157, 145);
 }
 
+h4 {
+    text-align: justify;
+    hyphens: auto;
+    text-justify: auto;
+}
+
 .navigation {
   background-color: rgb(31, 34, 36);
   border-bottom-color: rgb(119, 110, 97);
